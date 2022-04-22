@@ -15,15 +15,15 @@ public class DanhSachHangHoa {
     
 
 //1 thêm hàng hóa
-    public void themHangHoa(HangHoa hanghoa){
-        for (HangHoa hanghoa1 : danhSach) {
-            if(hanghoa1.getTenHangHoa().equals(hanghoa.getTenHangHoa())){
+    public void themHangHoa(HangHoa hangHoa){
+        for (HangHoa hangHoa1 : danhSach) {
+            if(hangHoa1.getTenHangHoa().equals(hangHoa.getTenHangHoa())){
                 System.out.println("khong duoc trung ma hang");
                 return;
             }
      
         }
-    danhSach.add(hanghoa);
+    danhSach.add(hangHoa);
     
     }
     SimpleDateFormat ngayVietNam = new SimpleDateFormat("dd/MM/yyyy");
@@ -50,12 +50,12 @@ public void themHang(){
     }
 }
 //2 xóa hàng hóa
-public boolean xoaHangHoa(HangHoa hanghoa){
-   return danhSach.remove(hanghoa);
+public boolean xoaHangHoa(HangHoa hangHoa){
+   return danhSach.remove(hangHoa);
 }
 //3 sửa hàng hóa
-public void suaHangHoa(HangHoa hanghoa, int vitri ){
-danhSach.set(vitri, hanghoa);
+public void suaHangHoa(HangHoa hangHoa, int vitri ){
+danhSach.set(vitri, hangHoa);
 }
 // in danh sách
 public void inHangHoa(){
