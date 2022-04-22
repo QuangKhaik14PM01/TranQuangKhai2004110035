@@ -18,24 +18,32 @@ public class HangHoaTestDrive {
         System.out.println("nhap don gia ");
         Double donGia = scanner.nextDouble();
         scanner.nextLine();
-
+        HangHoa hangHoa;
+        SimpleDateFormat ngayVietNam = new SimpleDateFormat("dd/MM/yyyy");
+        int luachon =scanner.nextInt();
+       
         System.out.println("------Menu------");
-        System.out.println("Vui lòng chọn chức năng");
-        System.out.println
-			(  " 1.	Them hang hoa.\n"
-             + " 2. Xoa hang hoa.\n "
-            +  " 3. Sua hang hoa.\n"
-             + " 4. Tim kiem hang hoa\n"
-              +" 5. Sap xep hang hoa tu cao den thap\n"
-              +" 6. Sap xep hang hoa tu thap den cao\n"
-              +" 7. In hang hoa \n"
-              +" 8. Lưu File hang hoa\n" 
-              +" 0. Thoát\n");
+       System.out.println("Vui lòng chọn chức năng");
+       System.out.println
+           (  " 1.	Them hang hoa.\n"
+            + " 2. Xoa hang hoa.\n "
+           +  " 3. Sua hang hoa.\n"
+            + " 4. Tim kiem hang hoa\n"
+             +" 5. Sap xep hang hoa tu cao den thap\n"
+             +" 6. Sap xep hang hoa tu thap den cao\n"
+             +" 7. In hang hoa \n"
+             +" 8. Lưu File hang hoa\n" 
+             +" 0. Thoát\n");
+             luachon = scanner.nextInt();
+             scanner.nextLine();
+
+
+             
     
     
-    int luachon =scanner.nextInt();
-    SimpleDateFormat ngayVietNam = new SimpleDateFormat("dd/MM/yyyy");
-    HangHoa hangHoa;
+    
+    
+   
 
     if(luachon==1){
         hangHoa = new HangThucPham(maHangHoa, tenHangHoa, soLuong, donGia, "công ty việc nam", ngayVietNam.parse("15/02/2022"),ngayVietNam.parse("15/03/2022"));
